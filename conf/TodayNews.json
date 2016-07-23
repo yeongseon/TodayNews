@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "todaynews-1381",
+  "private_key_id": "2ce285f6d4a1786f88137036b2037235b45b768a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFvUHJcmRr5WqR\nvkKZgDEwfBnp/a0pXbCEb5d8LT5nZn0pzosS/olkTsuI2gwFKU+BOgOPVOcibAol\nwLj+EwenWvSnEiExY46lJ6T8LQJkTdSYa7nPYj0WYuhggAqhOSa4GYEiLDLpxuUy\nKWkI439yNZH7lL83kntd1LaQMgvihfRWlkGSSHz25TnMFmFO18XVfcoygsjDvk2P\nMbrdk0UC+OlndQnF50IL+IdTfsMDVCd92opuBxMpknqH0D8WxN4ak7OxxsVLjsby\nKKBOxV1P/OjwHBQ46HU6ryb7RnX0+sWCIL/gez+dt7UEfLhjX2bU7etilf9iwvRi\nYE4/t9y3AgMBAAECggEBAKB7klnxKklbP1ubo6e7H7Du94Utqg0JicpiWvqgKaZ3\nyptUkxDOXil3vb6K4PiLZ4hE0kDQsmoAb1fmiv1B6pNLwYWatC/GUi399+vmh6tq\nc2FlBL+oRlXV3iz7niTtIlyF7oUShBuxnbBRZXqeUIAbtCgPuAVdMByeF7D9vSGR\nEt+7do7EPqU5SNZ7V2DqwLCri3UthnCa52o901I/MfGfORNy39wcQ+OjTUqpWt+J\n1vao1G+peRKH0i+qgIY16UKz8rmZ64E4ptTpZuY0L485N06Y8klMMwU5l9oXTGCi\nuaEZNAkZZh84ZaUP4T+6T8+7Damb5kRQOocAhUZfy7kCgYEA4joMN48LY3ooicy0\nN02S6EvZIk0wqRFIm0mMCUrkQKdKeik0DD1nU3NvEzyVJ4ldcvKy/r0SzL+5NEje\nAPAJyIOy8S4KtEObAwHJGl7nkyZmHghIX8fhlvrFFs0CuT/xX/WhSlRNF1p453Od\nsazQ6JcNpbPCn49Lnbz6fOvGvM0CgYEA38NrbAxNc8XFLqOX6DC+elz92uLlJi38\nAPWiZN4RTYqC5boczLvoNMoa+IeaAccc8TvBRy4lb8MckkyI8Udu5sjYhc4lTYU+\nfzm6Mlnfck7vM1RyNAE3yUW/4uREt3xAjEBO+hePAP/2J+UBUoUoaAFcz+jpUAxE\nYQCquXSvP5MCgYEAxCWeaCGvty24rln9u6GYCa+R8YrJ8R0aPgIT2A7GP0SNb8P/\n68jlqNaCbURu8pvImZzTE8nt3fcx5qJzUo7NfLyrzy+jek7PvViz/BhjYxO9ILb/\nwYQ2FckST8WrYeGOMCxyD1dujBwWjl+RT/dOHwyxeYWV7vC4mGi9KsjnRNUCgYB6\nOa51yIqOEJtSjH2vkOCayizH4WQ15KxggcwAuOROrLgvb+fHVWTTYQo2cyuGiRKg\nGnnKvcQpNjRnHXM4CELlwRO0kxQBMiUfLZMtabYKJF+4dAolqfyk7nqQHwwCBdbk\nRURei3vLmgUFaau9PYsCtKvTzW+UD/9R1SFsR/ZqDQKBgHGl/fV5UOgqC+x0VW8W\nqghzz8/u5b88HWM3usF/vDxJX9L8EyAhpqhiuBjkxuZ+B3SXBFFBS14djPP/QaeS\nFG/nkNuqYi6zZucL5HJ/VA6KXW1n0v2dszrCFk0q0KL5mJlCTojRtO071i4JLJMd\nh1gmgwLHQbN92yNTz5S8DzT9\n-----END PRIVATE KEY-----\n",
+  "client_email": "todaynews-1381@appspot.gserviceaccount.com",
+  "client_id": "117067340850589758935",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/todaynews-1381%40appspot.gserviceaccount.com"
+}

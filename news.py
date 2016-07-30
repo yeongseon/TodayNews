@@ -28,6 +28,14 @@ class CardNews(object):
         self.book_name = ''
         self.book_author = ''
         self.book_text = ''
+
+        self.movie_num = 0
+        self.movie_name = ''
+        self.movie_summary = ''
+        self.movie_director = ''
+        self.movie_actor = ''
+        self.movie_text = ''
+
         return
 
     def set_custom_num(self, str):
@@ -77,6 +85,7 @@ class CardNews(object):
 
     def set_book_num(self, num):
         self.book_num = num
+
     def set_book_name(self, str):
         self.book_name = str
 
@@ -85,6 +94,25 @@ class CardNews(object):
 
     def set_book_text(self, str):
         self.book_text = str
+
+    def set_movie_num(self, num):
+        self.movie_num = num
+
+    def set_movie_name(self, str):
+        self.movie_name = str
+
+    def set_movie_summary(self, str):
+        self.movie_summary = str
+
+    def set_movie_director(self, str):
+        self.movie_director = str
+
+    def set_movie_actor(self, str):
+        self.movie_actor = str
+
+    def set_movie_text(self, str):
+        self.movie_text = str
+
 
     def draw(self):
         view = CardView(self.day)
@@ -96,25 +124,17 @@ class CardNews(object):
         if self.day == 0:
             view.draw_saying_contents(self.saying_text, self.saying_autor)
         elif self.day == 3:
-            view.draw_book_contents(str(self.book_num), self.book_name, self.book_author, self.book_text)
-        elif self.day == 4:
+            view.draw_book_contents(str(self.book_num), self.book_name,
+                                    self.book_author, self.book_text)
+        elif self.day == 5:
+            view.draw_movie_contents(str(self.movie_num), self.movie_name,
+                                     self.movie_summary, self.movie_director,
+                                     self.movie_actor, self.movie_text)
 
 
         view.draw_news_list(self.news_list)
 
-        view.draw_custom_phone(self.custom_phone)
-        view.draw_custom_name(self.custom_job + ' ' + self.custom_name)
-        view.draw_custom_photo(str(self.custom_num))
+        view.draw_cumtom(str(self.custom_num), self.custom_job + ' ' + self.custom_name, self.custom_phone)
 
         view.save_img(str(self.custom_num) + '_' + str(time.strftime('%Y%m%d')) + '.jpg')
         return
-
-
-
-
-
-
-
-
-
-

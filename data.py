@@ -39,6 +39,14 @@ class Data(object):
         self.book_name = ''
         self.book_author = ''
         self.book_text = ''
+
+        self.movie_num = 0
+        self.movie_name = ''
+        self.movie_summary = ''
+        self.movie_director = ''
+        self.movie_actor = ''
+        self.movie_text = ''
+
         return
 
     def get_custom_name(self):
@@ -95,6 +103,23 @@ class Data(object):
     def get_book_text(self):
         return self.book_text
 
+    def get_movie_num(self):
+        return self.movie_num
+
+    def get_movie_name(self):
+        return self.movie_name
+
+    def get_movie_summary(self):
+        return self.movie_summary
+
+    def get_movie_director(self):
+        return self.movie_director
+
+    def get_movie_actor(self):
+        return self.movie_actor
+
+    def get_movie_text(self):
+        return self.movie_text
 
     def get_custom_size(self):
         wks = self.gc.open('Custom').worksheet('Custom')
@@ -221,6 +246,7 @@ class Data(object):
         return
 
     def select_book(self):
+
         wks = self.gc.open('Book').worksheet(time.strftime('Book'))
         count = int(wks.cell(1,1).value)
 
@@ -234,14 +260,17 @@ class Data(object):
             wks.update_cell(1, 1, count+1)
 
     def select_movie(self):
+
         wks = self.gc.open('Movie').worksheet(time.strftime('Movie'))
         count = int(wks.cell(1,1).value)
 
         if wks.cell(count+1, 1).value == time.strftime('%y.%m.%d'):
             self.movie_num = count
             self.movie_name = wks.cell(count+1, 2).value
-            self.movie_author = wks.cell(count+1, 3).value
-            self.movie_text = wks.cell(count+1, 4).value
+            self.movie_summary = wks.cell(count+1, 3).value
+            self.movie_director = wks.cell(count+1, 4).value
+            self.movie_actor = wks.cell(count+1, 5).value
+            self.movie_text = wks.cell(count+1, 6).value
         else:
             wks.update_cell(count+2, 1, time.strftime('%y.%m.%d'))
             wks.update_cell(1, 1, count+1)

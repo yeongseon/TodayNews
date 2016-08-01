@@ -30,6 +30,7 @@ if __name__ == "__main__":
 
         if day == 0:
             data.select_saying()
+            cardnews.set_saying_num(data.get_saying_num())
             cardnews.set_saying_text(data.get_saying_text())
             cardnews.set_saying_autor(data.get_saying_author())
         elif day == 3:

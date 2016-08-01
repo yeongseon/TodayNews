@@ -244,11 +244,11 @@ class  CardView(object):
             self.draw_font(FONT_JUA, 20, HEIGHT_SECTION3+580+(size+10)*i, size, BG_COLOR_BLACK, line)
         return
 
-    def draw_saying_contents(self, text, author):
+    def draw_saying_contents(self, num, text, author):
         self.draw_icon(ICON_SAYING, 30, HEIGHT_SECTION2 + 20)
         self.draw_font(FONT_DOHYEON, 124, HEIGHT_SECTION2 + 30, 40, BG_COLOR_WHITE, '오늘의 명언')
 
-        filename = 'picture/saying/' + str(time.strftime('%Y%m%d')) + '.jpg'
+        filename = 'picture/saying/' + num + '.jpg'
         img = Image.open(filename).resize((1080, SECTION3_WIDTH))
         pixel = img.load()
 

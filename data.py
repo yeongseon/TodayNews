@@ -32,6 +32,7 @@ class Data(object):
         self.news2_text = ''
         self.news_list = []
 
+        self.saying_num = 0
         self.saying_text = ''
         self.saying_author = ''
 
@@ -84,6 +85,9 @@ class Data(object):
 
     def get_news_list(self):
         return self.news_list
+
+    def get_saying_num(self):
+        return self.saying_num
 
     def get_saying_text(self):
         return self.saying_text
@@ -234,15 +238,14 @@ class Data(object):
         wks = self.gc.open('Saying').worksheet(time.strftime('Saying'))
         count = int(wks.cell(1,1).value)
 
-        for i in range(count):
-            if wks.cell(i+2,1).value == time.strftime('%y.%m.%d'):
-                index = i+2
+        if wks.cell(count+1, 1).value == time.strftime('%y.%m.%d'):
+            self.saying_num = count
+            self.saying_text = wks.cell(count+1, 2).value
+            self.saying_author = wks.cell(count+1, 3).value
+        else:
+            wks.update_cell(count+2, 1, time.strftime('%y.%m.%d'))
+            wks.update_cell(1, 1, count+1)
 
-        self.saying_text = wks.cell(index, 2).value
-        self.saying_author = wks.cell(index, 3).value
-
-        #print(self.saying_text)
-        #print(self.saying_author)
         return
 
     def select_book(self):

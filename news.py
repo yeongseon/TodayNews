@@ -21,6 +21,7 @@ class CardNews(object):
         self.news2_text = ''
         self.news_list = []
 
+        self.saying_num = 0
         self.saying_text = ''
         self.saying_autor = ''
 
@@ -77,6 +78,9 @@ class CardNews(object):
     def set_news_list(self, list):
         self.news_list = list
 
+    def set_saying_num(self, num):
+        self.saying_num = num
+
     def set_saying_text(self, str):
         self.saying_text = str
 
@@ -122,7 +126,7 @@ class CardNews(object):
         view.draw_date(str(time.strftime('%Y.%m.%d')))
 
         if self.day == 0:
-            view.draw_saying_contents(self.saying_text, self.saying_autor)
+            view.draw_saying_contents(str(self.saying_num), self.saying_text, self.saying_autor)
         elif self.day == 3:
             view.draw_book_contents(str(self.book_num), self.book_name,
                                     self.book_author, self.book_text)
